@@ -1423,7 +1423,7 @@ public class AppManager extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Tên bệnh nhân", "Giới tính", "Email bệnh nhân", "SĐT", "Địa chỉ bệnh nhân", "Ghi chú", "Tổng tiền ", "Bác sĩ điều trị", "Ngày mượn", "Ngày trả", "Ngày tạo", "Người tạo", "Ngày sửa", "Người sửa"
+                "STT", "Tên bệnh nhân", "Giới tính", "Email bệnh nhân", "SĐT", "Địa chỉ bệnh nhân", "Ghi chú", "Tổng tiền ", "Bác sĩ điều trị", "Ngày điều trị ", "Ngày tái khám", "Ngày tạo", "Người tạo", "Ngày sửa", "Người sửa"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -1485,7 +1485,7 @@ public class AppManager extends javax.swing.JFrame {
 
         jLabel14.setText("ID bác sĩ điều trị: ");
 
-        jLabel21.setText("Ngày mượn (yyyy-mm-dd)");
+        jLabel21.setText("Ngày tái khám ");
 
         jtfDateStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1493,7 +1493,7 @@ public class AppManager extends javax.swing.JFrame {
             }
         });
 
-        jLabel22.setText("Ngày trả (yyyy-mm-dd)");
+        jLabel22.setText("Ngày điều trị");
 
         jLabel16.setText("Note");
 
@@ -2597,14 +2597,14 @@ public class AppManager extends javax.swing.JFrame {
             dateStartBorrow = jtfDateStart.getText();
         } else {
             isOK = false;
-            JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày mượn");
+            JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày điều trị ");
         }
 
         if(jtfDateEnd.getText().length() > 0) {
             dateEndBorrow = jtfDateEnd.getText();
         } else {
             isOK = false;
-            JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày trả");
+            JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày tái khám");
         }
         
 
@@ -2893,14 +2893,14 @@ public class AppManager extends javax.swing.JFrame {
                 dateStartBorrow = jtfDateStart.getText();
             } else {
                 isOK = false;
-                JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày mượn");
+                JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày điều trị ");
             }
 
             if(jtfDateEnd.getText().length() > 0) {
                 dateEndBorrow = jtfDateEnd.getText();
             } else {
                 isOK = false;
-                JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày trả");
+                JOptionPane.showMessageDialog(rootPane, "Bạn chưa nhập ngày tái khám");
             }
             
             if(isOK) {

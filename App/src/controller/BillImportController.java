@@ -30,7 +30,7 @@ public class BillImportController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select billimport.*,"
@@ -93,7 +93,7 @@ public class BillImportController {
         PreparedStatement statement = null;
         try {
             //lay tat ca danh mục
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "insert into billimport(total, created_at, id_staff_created, "
@@ -136,7 +136,7 @@ public class BillImportController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "update billimport set updated_at = ?, id_staff_updated = ?, "
@@ -177,7 +177,7 @@ public class BillImportController {
         java.sql.PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             
@@ -215,7 +215,7 @@ public class BillImportController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select billimport.*,"
@@ -284,7 +284,7 @@ public class BillImportController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select billimport.*,"
@@ -354,7 +354,7 @@ public class BillImportController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select billimport.*,"
@@ -422,7 +422,7 @@ public class BillImportController {
         int total = 0;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             
@@ -473,7 +473,7 @@ public class BillImportController {
         int total = 0;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             

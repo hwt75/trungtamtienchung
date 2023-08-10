@@ -28,7 +28,7 @@ public class AccountController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select * from account";
@@ -72,7 +72,7 @@ public class AccountController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select id from staff where email = ?";
@@ -112,7 +112,7 @@ public class AccountController {
         Connection conn = null;
         PreparedStatement statement = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "insert into account(email, password) values(?, ?)";
@@ -148,7 +148,7 @@ public class AccountController {
         Connection conn = null;
         PreparedStatement statement = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "update account set password = ? where email = ?";

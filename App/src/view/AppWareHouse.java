@@ -756,7 +756,7 @@ public class AppWareHouse extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "ID bác sĩ", "Họ và tên", "Giới tính", "Email", "Số điện thoại", "Địa chỉ", "Quyền", "Trạng thái"
+                "STT", "ID nhân viên", "Họ và tên", "Giới tính", "Email", "Số điện thoại", "Địa chỉ", "Quyền", "Trạng thái"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -818,7 +818,7 @@ public class AppWareHouse extends javax.swing.JFrame {
                 .addContainerGap(522, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Danh sách bác sĩ điều trị", jplStaff);
+        jTabbedPane1.addTab("Danh sách bác sĩ điều trị ", jplStaff);
 
         jLabel1.setText("Tên nhà cung cấp:");
 
@@ -1095,13 +1095,13 @@ public class AppWareHouse extends javax.swing.JFrame {
         jplGuestLayout.setHorizontalGroup(
             jplGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jplGuestLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(428, Short.MAX_VALUE))
-            .addGroup(jplGuestLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 1259, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 1272, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(jplGuestLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jplGuestLayout.setVerticalGroup(
             jplGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1110,7 +1110,7 @@ public class AppWareHouse extends javax.swing.JFrame {
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(277, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Quản lý bệnh nhân", jplGuest);
@@ -1120,7 +1120,7 @@ public class AppWareHouse extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Tên bệnh nhân", "Giới tính", "Email bệnh nhân", "SĐT", "Địa chỉ bệnh nhân", "Ghi chú", "Tổng tiền ", "Bác sĩ điều trị", "Ngày điều trị ", "Ngày tái khám", "Ngày tạo", "Người tạo", "Ngày sửa", "Người sửa"
+                "STT", "Tên bệnh nhân", "Giới tính", "Email bệnh nhân", "SĐT", "Địa chỉ bệnh nhân", "Ghi chú", "Tổng tiền ", "Bác sĩ điều trị ", "Ngày điều trị", "Ngày tái khám", "Ngày tạo", "Người tạo", "Ngày sửa", "Người sửa"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -1173,16 +1173,16 @@ public class AppWareHouse extends javax.swing.JFrame {
 
         jLabel15.setText("ID bệnh nhân");
 
-        btnCreateBillExport.setText("Tạo lịch hẹn");
+        btnCreateBillExport.setText("Tạo đặt lịch hẹn");
         btnCreateBillExport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateBillExportActionPerformed(evt);
             }
         });
 
-        jLabel14.setText("ID bác sĩ điều trị: ");
+        jLabel14.setText("ID bác sĩ điều trị : ");
 
-        jLabel21.setText("ngày điều trị  (yyyy-mm-dd)");
+        jLabel21.setText("Ngày điều trị");
 
         jtfDateStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1190,7 +1190,7 @@ public class AppWareHouse extends javax.swing.JFrame {
             }
         });
 
-        jLabel22.setText("ngày tái khám (yyyy-mm-dd)");
+        jLabel22.setText("Ngày tái khám");
 
         jLabel16.setText("Note");
 
@@ -1234,7 +1234,7 @@ public class AppWareHouse extends javax.swing.JFrame {
                             .addGroup(jPanel11Layout.createSequentialGroup()
                                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                                    .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 129, Short.MAX_VALUE)
                                     .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(33, 33, 33)
                                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1317,7 +1317,7 @@ public class AppWareHouse extends javax.swing.JFrame {
 
             },
             new String [] {
-                "STT", "Nhà cung cấp", "Tổng tiền", "điều trị", "Ngày tạo", "Người tạo", "Ngày sửa", "Người sửa"
+                "STT", "Nhà cung cấp", "Tổng tiền", "Bác sĩ điều trị ", "Ngày tạo", "Người tạo", "Ngày sửa", "Người sửa"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -1337,7 +1337,7 @@ public class AppWareHouse extends javax.swing.JFrame {
 
         jLabel5.setText("ID Nhà cung cấp:");
 
-        jLabel12.setText("ID bác sĩ điều trị:");
+        jLabel12.setText("ID bác sĩ điều trị :");
 
         btnEditBillImport.setText("Sửa");
         btnEditBillImport.setEnabled(false);
@@ -1452,7 +1452,7 @@ public class AppWareHouse extends javax.swing.JFrame {
                 .addContainerGap(462, Short.MAX_VALUE))
         );
 
-        jplBillManage.addTab("Hoá đơn nhập kho", jplBillImport);
+        jplBillManage.addTab("Hóa đơn nhập", jplBillImport);
 
         jTabbedPane1.addTab("Quản lý hóa đơn", jplBillManage);
 

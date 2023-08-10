@@ -29,7 +29,7 @@ public class StaffController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -83,7 +83,7 @@ public class StaffController {
         Connection conn = null;
         PreparedStatement statement = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "insert into staff(fullname, gender, email, phoneNumber, "
@@ -130,7 +130,7 @@ public class StaffController {
         
         try {
             //lay tat ca danh sach sinh vien
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "update staff set fullname = ?, gender = ?, "
@@ -177,7 +177,7 @@ public class StaffController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -236,7 +236,7 @@ public class StaffController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -295,7 +295,7 @@ public class StaffController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -354,7 +354,7 @@ public class StaffController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -412,7 +412,7 @@ public class StaffController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -470,7 +470,7 @@ public class StaffController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -528,7 +528,7 @@ public class StaffController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select staff.*, role.name roleName, account.password "
@@ -590,7 +590,7 @@ public class StaffController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select role_id from staff where id = ?";

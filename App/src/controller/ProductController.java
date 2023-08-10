@@ -29,7 +29,7 @@ public class ProductController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select product.*, category.name categoryName, "
@@ -88,7 +88,7 @@ public class ProductController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "insert into product(title, category_id, price, description, linkimage, "
@@ -136,7 +136,7 @@ public class ProductController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "update product set title = ?, category_id = ?, price = ?, "
@@ -181,7 +181,7 @@ public class ProductController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "update product set count = ?, id_staff_updated = ?,  updated_at = ? where id = ?";
@@ -221,7 +221,7 @@ public class ProductController {
         PreparedStatement statement = null;
         try {
            
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "select product.*, category.name categoryName, "
@@ -283,7 +283,7 @@ public class ProductController {
         PreparedStatement statement = null;
         try {
            
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql =  "select product.*, category.name categoryName, "
@@ -349,7 +349,7 @@ public class ProductController {
         PreparedStatement statement = null;
         try {
            
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql =  "select product.*, category.name categoryName, "
@@ -415,7 +415,7 @@ public class ProductController {
         PreparedStatement statement = null;
         try {
            
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql =  "select count from product where id = ?";

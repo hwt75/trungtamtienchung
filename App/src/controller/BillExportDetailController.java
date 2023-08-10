@@ -29,7 +29,7 @@ public class BillExportDetailController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             
@@ -86,7 +86,7 @@ public class BillExportDetailController {
         Connection conn = null;
         java.sql.PreparedStatement statement = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "insert into billexport_detail (id_product, "
@@ -125,7 +125,7 @@ public class BillExportDetailController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "update billexport_detail set id_product = ?, count = ? where id = ?";
@@ -163,7 +163,7 @@ public class BillExportDetailController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
             String sql = "delete from billexport_detail where id = ?";
@@ -200,7 +200,7 @@ public class BillExportDetailController {
         
         try {
             
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "lamtung123);
             
             //query
                         
