@@ -21,11 +21,13 @@ public class main {
    public static void main(String[] args) {
        int idStaff = 0;
        int roleID = 0;
+        
        LogInFrm logInFrm = new LogInFrm();
        while(idStaff == 0) {
            logInFrm.setVisible(true);
            idStaff = logInFrm.getStaffId();
        }
+       System.out.println(roleID);
        roleID = StaffController.findRoleID(idStaff);
        if(roleID == 1) {
            AppManager appManager = new AppManager(idStaff);

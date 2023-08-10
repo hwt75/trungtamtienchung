@@ -29,7 +29,7 @@ public class CustomController {
         Statement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select custom.*, staffCreate.fullname staffCreateName, "
@@ -84,7 +84,7 @@ public class CustomController {
         Connection conn = null;
         PreparedStatement statement = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "insert into custom(fullname, gender, email, phoneNumber, address, "
@@ -130,7 +130,7 @@ public class CustomController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "update custom set fullname = ?, gender = ?, email = ?, "
@@ -177,7 +177,7 @@ public class CustomController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select custom.*, staffCreate.fullname staffCreateName, "
@@ -237,7 +237,7 @@ public class CustomController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select custom.*, staffCreate.fullname staffCreateName, "

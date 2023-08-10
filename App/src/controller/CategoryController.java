@@ -28,7 +28,7 @@ public class CategoryController {
         
         try {
             //lay tat ca danh sach
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select * from category";

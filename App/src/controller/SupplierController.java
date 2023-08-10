@@ -30,7 +30,7 @@ public class SupplierController {
         
         try {
             //lay tat ca danh sach sinh vien
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select supplier.*, staffCreate.fullname staffCreateName, "
@@ -86,7 +86,7 @@ public class SupplierController {
         java.sql.PreparedStatement statement = null;
         try {
             //lay tat ca danh mục
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "insert into supplier(name, phoneNumber, email, address, "
@@ -132,7 +132,7 @@ public class SupplierController {
         
         try {
             //lay tat ca danh sach sinh vien
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "update supplier set name = ?, phoneNumber = ?, email = ?, "
@@ -177,7 +177,7 @@ public class SupplierController {
         java.sql.PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select supplier.*, staffCreate.fullname staffCreateName, "
@@ -237,7 +237,7 @@ public class SupplierController {
         PreparedStatement statement = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_dam_hoi", "root", "trantuan123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trungtamtiemchung", "root", "trantuan123");
             
             //query
             String sql = "select supplier.*, staffCreate.fullname staffCreateName, "
